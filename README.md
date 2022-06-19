@@ -1,12 +1,31 @@
-# {{ cookiecutter.project_name }}
+# Cookiecutter Personal Data Science
 
-{{ cookiecutter.project_description }}
-  
-## Installation guide
+_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
-Please read [install.md](install.md) for details on how to set up this project.
+## Requirements
 
-## Project Organization
+- [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html)
+- [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html): This can be installed with pip by or conda depending on how you manage your Python packages:
+
+``` bash
+pip install cookiecutter
+```
+
+or
+
+``` bash
+conda install -c conda-forge cookiecutter
+```
+
+## Create a new project
+
+In a folder where you want your project generated:
+
+```bash
+cookiecutter https://github.com/Giocrisrai/cookiecutter-personal
+```
+
+## Resulting directory structure
 
     ├── LICENSE
     ├── tasks.py           <- Invoke with commands like `notebook`.
@@ -57,5 +76,11 @@ Please read [install.md](install.md) for details on how to set up this project.
         └── visualization  <- Scripts to create exploratory and results oriented visualizations.
             └── visualize.py
 
----
-Project based on the [cookiecutter personal data science project template](https://github.com/Giocrisrai/cookiecutter-personal).
+## Contributing guide
+
+All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
+
+## Credits
+
+This project is heavily influenced by [jvelezmagic-cookiecutter-conda-data-science
+](https://github.com/jvelezmagic/cookiecutter-conda-data-science)
